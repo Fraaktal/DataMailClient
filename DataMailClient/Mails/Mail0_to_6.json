@@ -1,0 +1,17 @@
+{
+	"_id":"0816fd85-7402-41ea-b0b7-9d1c0d2e5102",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Luna",
+			"lastName":"Garcia",
+			"account":"LunaG",
+			"mail":"lunagarcia@entreprise.com"
+		},
+		"receiver":"soljames@entreprise.com",
+		"subject":"Extra Hours",
+		"date":"2020-01-11T20:10:00+01:00"
+	},
+	"content":"Hello Mister James, Please remember to fill your extra hours for last month online. Thank you. "
+}

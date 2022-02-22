@@ -1,0 +1,18 @@
+{
+	"_id":"203981b1-130f-4392-9c8b-1c219c8e1852",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"David",
+			"lastName":"Bowie",
+			"account":"DB",
+			"mail":"davbowie@entreprise.com"
+		},
+		"receiver":"awesomeproducer@entreprise.com",
+		"subject":"Script Changes",
+		"categories":["FILM"],
+		"date":"2020-02-02T20:20:20+01:00"
+	},
+	"content":"Hello, Can I, please have the new script for tomorrow's scene? Thank you."
+}

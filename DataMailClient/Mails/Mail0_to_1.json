@@ -1,0 +1,18 @@
+{
+	"_id":"9c121bcb-8237-4135-8c0c-51a5e0526163",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Benoit",
+			"lastName":"Grif",
+			"account":"Benoit_G",
+			"mail":"benoitgrif@entreprise.com"
+		},
+		"receiver":"anayamio@entreprise.com",
+		"subject":"Contact Changes",
+		"categories":["SHIPPING"],
+		"date":"2021-12-02T12:14:00+01:00"
+	},
+	"content":"Hello Ana, I will be the new contact for shipping problems and questions from now on. I am glad to work with you."
+}

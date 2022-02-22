@@ -1,0 +1,18 @@
+{
+	"_id":"a5a3a0a7-8873-430d-8b89-ef9f89880deb",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Sol",
+			"lastName":"James",
+			"account":"SJ",
+			"mail":"soljames@entreprise.com"
+		},
+		"receiver":"lunagarcia@entreprise.com",
+		"subject":"Extra Hours",
+		"date":"2020-01-11T23:57:49+01:00"
+	},
+	"content":"Good Evening, Thanks for the reminder. I will fill my extra hours tomorrow morning!",
+	"history":"0816fd85-7402-41ea-b0b7-9d1c0d2e5102"
+}

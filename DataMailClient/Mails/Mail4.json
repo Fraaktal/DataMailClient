@@ -1,0 +1,17 @@
+{
+	"_id":"c6263615-b8b5-4851-85ef-2c25ccd93507",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Lorenzo",
+			"lastName":"Rodrig",
+			"account":"LR",
+			"mail":"lorenzorodrig@entreprise.com"
+		},
+		"receiver":"valentinesan@entreprise.com",
+		"subject":"Delivery",
+		"date":"2022-03-14T08:37:42+01:00"
+	},
+	"content":"Hello, We are expecting an important delivery today, can the gate be kept open? The driver does not have a badge... Thank you."
+}

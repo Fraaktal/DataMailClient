@@ -1,0 +1,17 @@
+{
+	"_id":"dd36e4b5-0200-46fe-a793-c871d7379ffd",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Felix",
+			"lastName":"Smith",
+			"account":"FelixS",
+			"mail":"felixsmith@entreprise.com"
+		},
+		"receiver":"yanikonis@entreprise.com",
+		"subject":"New Discovery",
+		"date":"2021-08-15T14:30:02+01:00"
+	},
+	"content":"Hello, Have you heard about the new discovery our laboratory made?"
+}

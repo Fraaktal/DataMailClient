@@ -1,0 +1,18 @@
+{
+	"_id":"6ab78c1a-1e61-4b2b-a084-ba63ef0b86b9",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Yanik",
+			"lastName":"Onis",
+			"account":"YanOn",
+			"mail":"yanikonis@entreprise.com"
+		},
+		"receiver":"felixsmith@entreprise.com",
+		"subject":"New Discovery",
+		"date":"2021-08-15T18:57:02+01:00"	
+	},
+	"content":"Hello, No, I've never heard about it...",
+	"history":"dd36e4b5-0200-46fe-a793-c871d7379ffd"
+}

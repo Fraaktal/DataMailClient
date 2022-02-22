@@ -1,0 +1,17 @@
+{
+	"_id":"1e0c0fc8-4e77-431b-8add-88844a71c9b7",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Emilien",
+			"lastName":"Mar",
+			"account":"EM",
+			"mail":"emilienmar@entreprise.com"
+		},
+		"receiver":"camiloreval@entreprise.com",
+		"subject":"Meeting postponed",
+		"date":"2019-10-09T18:00:12+01:00"
+	},
+	"content":"Hello, I can't find the next meeting on the planning anymore... Has it been moved or canceled?"
+}

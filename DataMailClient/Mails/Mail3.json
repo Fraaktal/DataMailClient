@@ -1,0 +1,18 @@
+{
+	"_id":"a498ec6f-d9f4-4cc5-8e64-28ed1934e41e",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Camilo",
+			"lastName":"Reval",
+			"account":"RevalC",
+			"mail":"camiloreval@entreprise.com"
+		},
+		"receiver":"emilienmar@entreprise.com",
+		"subject":"Meeting postponed",
+		"date":"2019-10-10T10:11:12+01:00"
+	},
+	"content":"Hello, tomorrow's meeting has been postponed to next thrusday. There is a number of COVID cases in the departement...",
+	"history":"1e0c0fc8-4e77-431b-8add-88844a71c9b7"
+}

@@ -1,0 +1,19 @@
+{
+	"_id":"52c4f6bd-4403-42e0-b397-b43c255dc1bd",
+	"metadata":
+	{
+		"sender":
+		{
+			"name":"Ana",
+			"lastName":"Yamio",
+			"account":"Ana_Y",
+			"mail":"anayamio@entreprise.com"
+		},
+		"receiver":"benoitgrif@entreprise.com",
+		"subject":"Order - Number A386926",
+		"categories":["ORDER","PRODUCT","SHIPPING"],
+		"date":"2021-12-03T13:14:00+01:00"
+	},
+	"content":"Hello Benoit, I am contacting you today because it seems that this order hasn't arrived yet and the customer is a bit worried. Do you have any informations about it? Thank you.",
+	"history":"9c121bcb-8237-4135-8c0c-51a5e0526163"
+}
