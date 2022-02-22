@@ -19,7 +19,7 @@ namespace DataMailClient.Model
             Subject = subject;
             Date = date;
 
-            if(Categories != null)
+            if(categories != null)
                 Categories = categories;
             else
                 Categories = new List<string>();

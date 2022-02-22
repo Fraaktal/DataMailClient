@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace DataMailClient.Model
 {
     public class CoreMail
     {
-        public Guid Id { get; set; }
+        public Guid _Id { get; set; }
         //Doc : https://docs.microsoft.com/fr-fr/dotnet/api/system.guid.newguid?view=net-6.0
         
         public Metadata Metadata { get; set; }
@@ -16,29 +17,20 @@ namespace DataMailClient.Model
 
         public List<Extention> Extensions { get; set; }
 
-        public CoreMail(Guid id, Metadata metadata, string content, 
+        [JsonConstructor]
+        public CoreMail(Guid id, Metadata metadata, string content,
             Guid history, List<Extention> extensions = null)
         {
-            Id = id;
+            _Id = id;
             Metadata = metadata;
             Content = content;
-            History = history;
-            
-            if(Extensions != null)
-                Extensions = extensions;
+
+            if(history != null)
+                History = history;
             else
-                Extensions = new List<Extention>();
-        }
+                History = Guid.Empty;
 
-        public CoreMail(Guid id, Metadata metadata, string content,
-            List<Extention> extensions = null)
-        {
-            Id = id;
-            Metadata = metadata;
-            Content = content;
-            History = Guid.Empty;
-
-            if (Extensions != null)
+            if (extensions != null)
                 Extensions = extensions;
             else
                 Extensions = new List<Extention>();
