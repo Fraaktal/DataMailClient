@@ -6,6 +6,7 @@ namespace DataMailClient.Model
 {
     public class CoreMail
     {
+        [JsonProperty("_id")]
         public Guid _Id { get; set; }
         //Doc : https://docs.microsoft.com/fr-fr/dotnet/api/system.guid.newguid?view=net-6.0
         
