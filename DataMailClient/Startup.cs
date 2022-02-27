@@ -45,6 +45,9 @@ namespace DataMailClient
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Mail}/{action=Index}/{id?}");
             });
         }
     }

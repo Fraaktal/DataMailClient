@@ -60,4 +60,11 @@
     <PackageReference Include="NUnit" Version="3.13.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

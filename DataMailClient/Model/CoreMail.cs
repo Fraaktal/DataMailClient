@@ -18,6 +18,8 @@ namespace DataMailClient.Model
 
         public List<Extention> Extensions { get; set; }
 
+        public CoreMail() { }
+
         [JsonConstructor]
         public CoreMail(Guid id, Metadata metadata, string content,
             Guid history, List<Extention> extensions = null)
