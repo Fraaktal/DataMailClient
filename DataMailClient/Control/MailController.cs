@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using DataMailClient.Model;
 using DataMailClient.Services;
 
@@ -101,6 +102,15 @@ namespace DataMailClient.Control
             }
 
             return result;
+        }
+
+        public CoreMail GetCorePreviousMail(string account, Guid id)
+        {
+            List<CoreMail> mails = new List<CoreMail>();
+            mails.AddRange(GetMailsInOutBox(account));
+            mails.AddRange(GetMailsInInBox(account));
+
+            return mails.FirstOrDefault(m => m._Id == id);
         }
     }
 }
