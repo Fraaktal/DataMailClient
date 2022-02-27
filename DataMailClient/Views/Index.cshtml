@@ -2,14 +2,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h1>Get Mails In In Box</h1>
-<form action="Mail/GetMailsInInBox" method="post" class="form-example">
+<form action="Home/MailsInBox" method="post" class="form-example">
     <div class="form-example">
         <label for="name">Enter your name: </label>
         <input type="text" name="account" required>
     </div>
     <div class="form-example">
-        <button type="submit" class="redirect">Submit</button>
+        <button type="submit">Submit</button>
     </div>
 </form>
-
+<h1>Get Mails In Out Box</h1>
+<form action="Home/MailsOutBox" method="post" class="form-example">
+    <div class="form-example">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="account" required>
+    </div>
+    <div class="form-example">
+        <button type="submit">Submit</button>
+    </div>
+</form>
 

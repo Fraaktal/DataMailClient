@@ -23,7 +23,16 @@ namespace DataMailClient
             var mailController = new MailController();
             homeResult.CoreMailList = mailController.GetMailsInInBox(account);
 
-            return View("~/Views/GetMailsInInBox.cshtml", homeResult);
+            return View("~/Views/MailList.cshtml", homeResult);
+        }
+
+        public ActionResult MailsOutBox(string account)
+        {
+            var homeResult = new HomeModel();
+            var mailController = new MailController();
+            homeResult.CoreMailList = mailController.GetMailsInOutBox(account);
+
+            return View("~/Views/MailList.cshtml", homeResult);
         }
     }
 }
