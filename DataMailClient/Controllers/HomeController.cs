@@ -34,5 +34,12 @@ namespace DataMailClient
 
             return View("~/Views/MailList.cshtml", homeResult);
         }
+
+        public ActionResult SendMails(CoreMail coreMail)
+        {
+            var homeResult = new HomeModel();
+
+            return View("~/Views/Sendder.cshtml", homeResult);
+        }
     }
 }

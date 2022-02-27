@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DataMailClient.Model.HomeModel
+
+<div>
+    @if (Model != null || Model.CoreMailList?.Count > 0)
+    {
+        @foreach (var mail in Model.CoreMailList)
+        {
+        <div>@mail</div>
+        }
+    }
+    <a href="/">Go home</a>
+</div>
