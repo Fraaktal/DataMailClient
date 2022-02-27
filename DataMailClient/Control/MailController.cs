@@ -3,22 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using DataMailClient.Model;
 using DataMailClient.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace DataMailClient.Control
 {
-    public class MailController : Controller
+    public class MailController
     {
         private readonly string _baseDirectory;
         private const string INBOX = "inbox";
         private const string OUTBOX = "outbox";
-
-        public ActionResult Index()
-        {
-            HomeModel homeModel = new HomeModel();
-
-            return View("/Views/Index.cshtml", homeModel);
-        }
 
         public MailController(string basePath = null)
         {
@@ -57,30 +49,29 @@ namespace DataMailClient.Control
         private void AddMailToOutBox(string subject, string account, string mail)
         {
             string path = Path.Combine(_baseDirectory, account, OUTBOX, subject);
-            //File.WriteAllText(path, mail);
+            File.WriteAllText(path, mail);
         }
 
         private void SendMailToDestination(string subject, string source, string destination)
         {
             string sourcePath = Path.Combine(_baseDirectory, source, OUTBOX, subject);
             string destinationPath = Path.Combine(_baseDirectory, destination, INBOX, subject);
-            //File.Copy(sourcePath, destinationPath);
+            File.Copy(sourcePath, destinationPath);
         }
 
-        public ActionResult GetMailsInInBox(string account)
+        public List<CoreMail> GetMailsInInBox(string account)
         {
-            HomeModel homeResult = new HomeModel();
             CreateFolderIfNeeded(account);
 
-            homeResult.CoreMailList = GetMailsIn(Path.Combine(_baseDirectory, account, INBOX));
-            return PartialView("~/Views/GetMailsInInBox.cshtml", homeResult);
+            var result = GetMailsIn(Path.Combine(_baseDirectory, account, INBOX));
+            return result;
         }
 
         public List<CoreMail> GetMailsInOutBox(string account)
         {
             CreateFolderIfNeeded(account);
 
-            var result = GetMailsIn(Path.Combine(_baseDirectory,account, OUTBOX));
+            var result = GetMailsIn(Path.Combine(_baseDirectory, account, OUTBOX));
             return result;
         }
 
@@ -101,7 +92,8 @@ namespace DataMailClient.Control
                     else
                     {
                         Console.WriteLine($"Le mail : {file.FullName} n'est pas valide :");
-                        foreach (var error in errors){
+                        foreach (var error in errors)
+                        {
                             Console.WriteLine(error);
                         }
                     }
