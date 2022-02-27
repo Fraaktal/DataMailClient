@@ -1,0 +1,21 @@
+{
+  "_id": "33066346-d948-48ad-996c-c28c64a8c2ed",
+  "metadata": {
+    "sender": {
+      "name": "testname",
+      "lastName": "testlastname",
+      "account": "testaccount",
+      "mail": "test@test.fr"
+    },
+    "receiver": "receiver@test.fr",
+    "subject": "testsubject",
+    "categories": [
+      "cat",
+      "catd"
+    ],
+    "date": "2022-02-27T00:00:00+01:00"
+  },
+  "content": "ContenTest",
+  "history": "00000000-0000-0000-0000-000000000000",
+  "extensions": []
+}

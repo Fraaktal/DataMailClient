@@ -1,0 +1,21 @@
+{
+  "_id": "9dc3b155-971f-402a-ad86-63ef8c28d46e",
+  "metadata": {
+    "sender": {
+      "name": "nam",
+      "lastName": "la",
+      "account": "acc",
+      "mail": "shi@test.fr"
+    },
+    "receiver": "test@test.fr",
+    "subject": "ipsum",
+    "categories": [
+      "cat",
+      "catd"
+    ],
+    "date": "2022-02-27T00:00:00+01:00"
+  },
+  "content": "lorem",
+  "history": "00000000-0000-0000-0000-000000000000",
+  "extensions": []
+}

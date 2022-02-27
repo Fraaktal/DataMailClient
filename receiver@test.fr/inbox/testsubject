@@ -1,0 +1,21 @@
+{
+  "_id": "c9715084-3175-4e78-be37-fc6f27eae54c",
+  "metadata": {
+    "sender": {
+      "name": "testname",
+      "lastName": "testlastname",
+      "account": "testaccount",
+      "mail": "test@test.fr"
+    },
+    "receiver": "receiver@test.fr",
+    "subject": "testsubject",
+    "categories": [
+      "cat",
+      "catd"
+    ],
+    "date": "2022-02-27T00:00:00+01:00"
+  },
+  "content": "ContenTest",
+  "history": "00000000-0000-0000-0000-000000000000",
+  "extensions": []
+}

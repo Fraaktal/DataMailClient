@@ -37,11 +37,16 @@ namespace DataMailClient
 
         public ActionResult SendMails
             (
-            Guid id, string content, Guid history, string receiver, 
-            string subject, string categories, DateTime date,
+            string content, Guid history, string receiver, 
+            string subject, string categories,
             string name, string lastName, string account, string mail
             )
         {
+            Guid id = Guid.NewGuid();
+            DateTime date = DateTime.Today;
+
+            history = Guid.Empty;
+
             var sender = new Sender(name, lastName, account, mail);
             List<string> categoriesList = categories.Split(',').ToList();
             var metadata = new Metadata(sender, receiver, subject, date, categoriesList);
