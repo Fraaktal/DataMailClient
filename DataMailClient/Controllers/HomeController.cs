@@ -35,11 +35,24 @@ namespace DataMailClient
             return View("~/Views/MailList.cshtml", homeResult);
         }
 
-        public ActionResult SendMails(CoreMail coreMail)
+        public ActionResult SendMails
+            (
+            Guid id, string content, Guid history, string receiver, 
+            string subject, string categories, DateTime date,
+            string name, string lastName, string account, string mail
+            )
         {
-            var homeResult = new HomeModel();
+            var sender = new Sender(name, lastName, account, mail);
+            List<string> categoriesList = categories.Split(',').ToList();
+            var metadata = new Metadata(sender, receiver, subject, date, categoriesList);
+            var coreMail = new CoreMail(id, metadata, content, history);
 
-            return View("~/Views/Sendder.cshtml", homeResult);
+            var mailController = new MailController();
+            
+            coreMail.Metadata.Date = DateTime.Today;
+            mailController.SendMail(coreMail);
+
+            return View("~/Views/Sendder.cshtml");
         }
     }
 }
