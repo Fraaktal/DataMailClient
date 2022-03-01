@@ -8,7 +8,33 @@
     {
         @foreach (var mail in Model.CoreMailList)
         {
-        <div>@mail</div>
+            if (mail != null)
+            {
+                <p>Sender : @mail.Metadata.Sender.Mail<br/></p>
+                <p>Receiver : @mail.Metadata.Receiver<br/></p>
+                <p>Subject : @mail.Metadata.Subject - Date : @mail.Metadata.Date.ToString("dddd,dd MMMM yyyy")<br/></p>
+
+                {
+                    string content = "Categories : ";
+                    bool isFirst = true;
+                    foreach (var metadataCategory in mail.Metadata.Categories)
+                    {
+                        if (!isFirst)
+                        {
+                            content += ", ";
+                        }
+
+                        content += metadataCategory;
+                        isFirst = false;
+                    }
+
+                    <p>@content</p>
+                }
+
+                <p>Content : <br/></p>
+                <p>@mail.Content<br/></p>
+            }
+            <p>----------------------------------------------------------------------------</p>
         }
     }
     <a href="/">Go home</a>
